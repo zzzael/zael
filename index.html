@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Zael Intro</title>
+</head>
+<body>
+  <div class="container">
+    <img src="main.png" alt="Background Image" class="background-image">
+    <div class="content">
+      <div class="intro-card">
+        <div class="header">
+          <img src="Ghana.png" alt="Ghana Flag" class="flag">
+          <h1 class="name">Zael</h1>
+        </div>
+        <p class="intro">intro;</p>
+        <ul class="details">
+          <li><span class="label">sports:</span> <span class="value">football, handball, badminton</span></li>
+          <li><span class="label">music:</span> <span class="value">ye, tyler the creator, kendrick lamar, pnd, sza, drake, cordae, roddy ricch</span></li>
+          <li><span class="label">hobbies:</span> <span class="value">coding, photography, gaming, sleep</span></li>
+          <li><span class="label">based in:</span> <span class="value">london, england</span></li>
+          <li><span class="label">describe yourself in one word:</span> <span class="value">bipolar</span></li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <p class="footer-text">github  |  yzycraft  |  chelsea fc</p>
+    </footer>
+  </div>
+
+  <!-- Include the audio element -->
+  <audio id="background-audio" src="puresouls.mp3"></audio>
+
+  <!-- JavaScript to control audio -->
+  <script>
+    window.addEventListener('load', () => {
+      const audio = document.getElementById('background-audio');
+      audio.volume = 0.4; // Set volume to 40%
+      audio.play().catch(error => {
+        console.error('Audio playback failed:', error);
+      });
+    });
+  </script>
+</body>
+</html>
